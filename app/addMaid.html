@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MaidReview App</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>MaidReview</h1>
+    <form id="reviewForm">
+      <label for="maidName">Maid's Name:</label>
+      <input type="text" id="maidName" name="maidName" required>
+
+      <label for="rating">Rating:</label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+      <label for="maidComment">Comment:</label>
+      <input type="text" id="maidComment" name="maidComment" >
+
+      <label for="maidPhoto">Maid's Photo:</label>
+      <input type="file" id="maidPhoto" name="maidPhoto" accept="image/*" capture="camera" required>
+
+
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <div id="reviews">
+      <!-- Reviews will be displayed here -->
+    </div>
+  </div>
+
+    <!--<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js"></script>-->
+
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
